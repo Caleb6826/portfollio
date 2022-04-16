@@ -5,15 +5,18 @@
     --fs-h1: 4.5rem;
     --fs-body: 1.125;
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 header h1 {
     color: var(--primary-color);
     align-items: center;
 }
+
 header {
 
     padding: 20px 35px;
@@ -25,10 +28,12 @@ header {
     position: -webkit-sticky;
 
   }
+
   header nav {
     margin: 7px 0;
 
 }
+
   header nav ul {
     color: var(--primary-color);
     display: flex;
@@ -37,10 +42,12 @@ header {
     align-items: center;
     list-style: none;
 }
+
 header nav ul li a {
     color: var(--primary-color);
     padding: 10px 15px;
   }
+
 body {
     color: var(--secondary-color);
     background: var(--primary-color);
@@ -50,9 +57,9 @@ body {
     background-color: var(--primary-color);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-img{
-    display: block;
-    max-width: 100%;
+
+section {
+    padding: 60px;
 }
 
 h2 {
@@ -61,6 +68,7 @@ h2 {
     font-size: var(--fs-h1);
 
 }
+
 .Me {
     background-size: cover;
     display: flex;
@@ -70,38 +78,75 @@ h2 {
     background-attachment: fixed;
     background-position: 80%;
 }
+
 .Me p {
     background-color: var(--accent-color);
+    text-align: center;
+    margin: 3.5%;
+    font-size: 18px;
+    line-height: 1.2;
 }
+
 .about-img {
-    max-height: 300px;
-    max-width: 300px;
+
+    max-width: 600px;
 }
+
 .Me {
     position: relative;
 }
-.Work {
 
+.Work {
+    background-image: url(../images/work.webp);
+    background-size: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+    flex-direction: row-reverse;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
+.Work div {
+    color: var(--primary-color);
+}
+
+h3 {
+    color: var(--accent-color);
+    margin: 0;
+    line-height: 1.1;
+    font-size: var(--fs-h1);
+}
+
+
+
 @media screen and (max-width: 980px) {
 header {
     padding-bottom: 0;
     justify-content: center;
     position: relative; }
 }
-@media screen and (max-width: 980px) {
 header h1 {
     width: 100%;
-    text-align: center; }
+    text-align: center; 
 }
-@media screen and (max-width: 980px) {
 header nav ul {
     margin-top: 20px;
     width: 100%;
-    justify-content: center;}
+    justify-content: center;
+}
+.Me p {
+    text-align: center;
 }
 @media screen and (max-width: 800px) {
     :root { 
-      --fs-h1: 3rem;
-      --fs-body: 1.125; }
+    --fs-h1: 3rem;
+    --fs-body: 1.125; }
+    }
+    @media screen and (max-width: 575px) {
+    .about-img {
+
+    max-width: 320px; }
     }
