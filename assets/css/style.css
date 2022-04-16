@@ -1,59 +1,107 @@
 :root {
-    --primary-color: #eeee48;
+    --primary-color: #fff;
+    --secondary-color: #303030;
+    --accent-color: #16e0bd;
+    --fs-h1: 4.5rem;
+    --fs-body: 1.125;
 }
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body {
-    background-position: bottom;
-    background-attachment: fixed;
-    background-size: inherit;
-    background-image: url(../images/gold.jpg);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+header h1 {
+    color: var(--primary-color);
+    align-items: center;
 }
 header {
-    background-attachment: fixed;
-    background-position: 80%;
+
     padding: 20px 35px;
-    background-image: url(../images/leather.jpg);
+    background-color: var(--secondary-color);
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-}
-header h1 {
-margin: 0;
-}
-header a {
-    text-decoration: none;
-    color: var(--primary-color);
-}
-header nav {
+    flex-wrap: wrap;
+    position: sticky;
+    position: -webkit-sticky;
+
+  }
+  header nav {
     margin: 7px 0;
+
 }
-header nav ul {
+  header nav ul {
+    color: var(--primary-color);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     list-style: none;
-  }
-  header nav ul li a {
+}
+header nav ul li a {
+    color: var(--primary-color);
     padding: 10px 15px;
-    font-weight: lighter;
-    font-size: 1.55vw;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
- .About-me{
+body {
+    color: var(--secondary-color);
+    background: var(--primary-color);
+    line-height: 1.6;
+    font-size: var(--fs-body);
+    margin: 0;
+    background-color: var(--primary-color);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+
+h2 {
+    margin: 0;
+    line-height: 1.1;
+    font-size: var(--fs-h1);
 
 }
-.About-p h2 {
-    color: var(--primary-color);
+.Me {
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
 }
-.About-me p {
-color: white;
+.Me p {
+    background-color: var(--accent-color);
 }
-section {
-    padding: 60px;
+.about-img {
+    max-height: 300px;
+    max-width: 300px;
 }
+.Me {
+    position: relative;
+}
+.Work {
+
+}
+@media screen and (max-width: 980px) {
+header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative; }
+}
+@media screen and (max-width: 980px) {
+header h1 {
+    width: 100%;
+    text-align: center; }
+}
+@media screen and (max-width: 980px) {
+header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;}
+}
+@media screen and (max-width: 800px) {
+    :root { 
+      --fs-h1: 3rem;
+      --fs-body: 1.125; }
+    }
