@@ -103,7 +103,6 @@ h2 {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-start;
-    background-attachment: fixed;
     background-position: 80%;
 
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -119,7 +118,7 @@ h3 {
     flex-direction: row-reverse;
 }
 h4 {
-    color: var(--secondary-color);
+    color: var(--secondary-color)
     
 }
 
@@ -128,6 +127,77 @@ h6 {
     line-height: 1.1;
     font-size: var(--fs-h1);
     color: var(--accent-color);
+}
+
+.Work {
+    display: flex;
+    justify-content: center;
+
+}
+
+.cards {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Mcard {
+    height: 400px;
+border-radius: 15px;
+}
+
+.Mcard :hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.card {
+width: 270px;
+height: 400px;
+margin: 10px;
+}
+.image {
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.buddy-img {
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-position: 80%;
+    background-size: cover;
+    height: 400px;
+    max-width: 100%;
+    background-image: url(../images/02-run-buddy.jpg);
+ 
+}
+
+.image1 {
+    height: 400px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+    background-image: url(../images/02-portfolio-2.jpg);
+}
+
+.card :hover{
+cursor: pointer;
+transform: scale(1.03);
+background-color: var(--secondary-color);
+color: var(--primary-color);
+}
+
+.image2 {
+    height: 400px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+    background-image: url(../images/02-portfolio-4.jpg);
 }
 
 @media screen and (max-width: 980px) {
@@ -148,6 +218,10 @@ header nav ul {
 .Me p {
     text-align: center;
 }
+.contact p {
+color: var(--accent-color);
+}
+
 @media screen and (max-width: 800px) {
     :root { 
     --fs-h1: 3rem;
