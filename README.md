@@ -1,1 +1,1 @@
-# portfollio
+# In this project Myportfolio I have designed a website that shows somethings about me including a picture and also has a work section wich displays all my projects, When you click on them you are presented a link to the websites of those projects. At the bottom of the website I also included my contact info.

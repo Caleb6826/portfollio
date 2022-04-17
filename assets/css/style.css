@@ -107,6 +107,7 @@ h2 {
 
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
 h3 {
     color: var(--secondary-color);
     margin: 0;
@@ -117,6 +118,7 @@ h3 {
     align-items: flex-start;
     flex-direction: row-reverse;
 }
+
 h4 {
     color: var(--secondary-color)
     
