@@ -96,7 +96,7 @@ h2 {
     position: relative;
 }
 
-.Work {
+.contact {
     background-image: url(../images/work.webp);
     background-size: auto;
     display: flex;
@@ -105,22 +105,30 @@ h2 {
     align-items: flex-start;
     background-attachment: fixed;
     background-position: 80%;
-    flex-direction: row-reverse;
+
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
-.Work div {
-    color: var(--primary-color);
-}
-
 h3 {
-    color: var(--accent-color);
+    color: var(--secondary-color);
     margin: 0;
     line-height: 1.1;
     font-size: var(--fs-h1);
+    flex-wrap: wrap;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+}
+h4 {
+    color: var(--secondary-color);
+    
 }
 
-
+h6 {
+    margin: 0;
+    line-height: 1.1;
+    font-size: var(--fs-h1);
+    color: var(--accent-color);
+}
 
 @media screen and (max-width: 980px) {
 header {
@@ -149,4 +157,7 @@ header nav ul {
     .about-img {
 
     max-width: 320px; }
+    h3 {
+        width: 100%;
+    }
     }
