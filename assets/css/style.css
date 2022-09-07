@@ -165,7 +165,7 @@ margin: 10px;
     margin-bottom: 15px;
 }
 
-.buddy-img {
+.book-img {
     border-radius: 15px;
     display: flex;
     justify-content: center;
@@ -175,7 +175,7 @@ margin: 10px;
     background-size: cover;
     height: 400px;
     max-width: 100%;
-    background-image: url(../images/02-run-buddy.jpg);
+    background-image: url(../images/book.png);
  
 }
 
